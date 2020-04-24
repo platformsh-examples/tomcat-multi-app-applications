@@ -14,7 +14,7 @@ The following files and additions make the framework work.  If using this projec
 
 * [`.platform/routes.yaml`](.platform/routes.yaml): Platform.sh allows you to define the [routes](https://docs.platform.sh/configuration/routes.html).
 * [`.platform/services.yaml`](.platform/services.yaml):  Platform.sh allows you to completely define and configure the topology and [services you want to use on your project](https://docs.platform.sh/configuration/services.html).
-* [`.platform.app.yaml`](.platform.app.yaml): You control your application and the way it will be built and deployed on Platform.sh [via a single configuration file](https://docs.platform.sh/configuration/app-containers.html).
+* [`.platform/applications.yaml`](.platform/applications.yaml): It is possible to define an application in a .platform/applications.yaml file in addition to discrete .platform.app.yaml files. The syntax is nearly identical, but the source.root key is required. The applications.yaml file is then a YAML array of application definitions.
 * An additional library dependency, [`platformsh/config-reader-java`](https://github.com/platformsh/config-reader-java), has been added.  It provides convenience wrappers for accessing the Platform.sh environment variables.
 
 ## References
